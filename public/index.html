@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Currencies</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/bundle.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Exchange rates</h1>
+        </header>
+        <div>
+            <p>These are the exchange rates:</p>
+            <ul id='allCurrencies'>
+                <li v-for="rate in euro.rates" :key= 'rate'>{{rate}}</li>
+            </ul>
+        </div>
+
+        
+    
+    </div>
+
+</body>
+</html>
